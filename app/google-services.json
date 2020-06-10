@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353203847214",
+    "firebase_url": "https://spelling-game-5d614.firebaseio.com",
+    "project_id": "spelling-game-5d614",
+    "storage_bucket": "spelling-game-5d614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353203847214:android:f513d4721ee3edefb65fbf",
+        "android_client_info": {
+          "package_name": "com.kingori.spellinggame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353203847214-rb5vb1etbd9bqmpk4oe2fi8effd7dvor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingori.spellinggame",
+            "certificate_hash": "bec5a0e0f586988c8ad1cd307b0f2c48728a0d68"
+          }
+        },
+        {
+          "client_id": "353203847214-fhm9gnjmda6k9ioh2v409t2c9i78a87t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9AqbJXomDMWwzh9hSwsd1sGaybzXsrOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353203847214-fhm9gnjmda6k9ioh2v409t2c9i78a87t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
