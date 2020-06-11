@@ -16,9 +16,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorDivider"
+        android:background="@color/colorPrimary"
         android:text="Start the game"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorTextIcons" />
 
 
 </RelativeLayout>
