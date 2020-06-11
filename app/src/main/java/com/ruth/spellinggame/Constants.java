@@ -1,7 +1,6 @@
 package com.ruth.spellinggame;
 
 public class Constants {
-    public static final String OXFORD_BASE_URL = "https://od-api.oxforddictionaries.com/api/v2/";
-    public static final String OXFORD_API_KEY = BuildConfig.OXFORD_API_KEY;
-    public static final String OXFORD_APP_ID = BuildConfig.OXFORD_APP_ID;
+    public static final String WEBSTER_BASE_URL = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/";
+    public static final String WEBSTER_API_KEY = BuildConfig.WEBSTER_API_KEY;
 }

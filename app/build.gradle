@@ -22,8 +22,7 @@ android {
     }
 
     buildTypes.each {
-        it.buildConfigField 'String', 'OXFORD_API_KEY', OxfordApiKey
-        it.buildConfigField 'String', 'OXFORD_APP_ID', OxfordAppId
+        it.buildConfigField 'String', 'WEBSTER_API_KEY', WebsterApiKey
     }
 
 }
