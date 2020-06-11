@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/navHome"-->
+<!--        android:icon="@drawable/ic_home_black_24dp"-->
+<!--        android:title="Home" />-->
+<!--    <item-->
+<!--        android:id="@+id/navGame"-->
+<!--        android:icon="@drawable/ic_games_black_24dp"-->
+<!--        android:title="Play Game" />-->
+<!--    <item-->
+<!--        android:id="@+id/navHistory"-->
+<!--        android:icon="@drawable/ic_history_black_24dp"-->
+<!--        android:title="History" />-->
     <item
-        android:id="@+id/navHome"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
+        android:id="@+id/navLogin"
+        android:title="Log In" />
     <item
-        android:id="@+id/navGame"
-        android:icon="@drawable/ic_games_black_24dp"
-        android:title="Play Game" />
-    <item
-        android:id="@+id/navHistory"
-        android:icon="@drawable/ic_history_black_24dp"
-        android:title="History" />
-    <item
-        android:id="@+id/navAccount"
-        android:icon="@drawable/ic_account_circle_black_24dp"
-        android:title="Account" >
-        <menu>
-            <item
-                android:id="@+id/navLogin"
-                android:title="Log In" />
-            <item
-                android:id="@+id/navLogout"
-                android:title="Log Out" />
-        </menu>
-
-    </item>
+        android:id="@+id/navLogout"
+        android:title="Log Out" />
 </menu>
