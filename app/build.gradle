@@ -52,5 +52,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:3.3.1'
     implementation 'com.google.firebase:firebase-core:17.4.2'
     implementation 'com.google.firebase:firebase-database:19.3.0'
+//    auth
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
 
 }
