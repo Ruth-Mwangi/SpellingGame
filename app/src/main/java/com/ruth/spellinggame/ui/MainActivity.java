@@ -2,6 +2,7 @@ package com.ruth.spellinggame.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -33,5 +34,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void logout() {
         FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(MainActivity.this, LoginFragment.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+
     }
 }
