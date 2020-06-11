@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_word">Find Word</string>
+    <string name="welcome">Welcome to the game! Enter a word below to search for.</string>
+    <string name="enter_a_word">Enter a word</string>
 </resources>
