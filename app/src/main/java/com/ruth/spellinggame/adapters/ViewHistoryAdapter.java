@@ -1,5 +1,6 @@
 package com.ruth.spellinggame.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,11 +18,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ViewHistoryAdapter extends RecyclerView.Adapter<ViewHistoryAdapter.ViewHistoryViewHolder> {
-    private ContentView mContext;
+    private Context mContext;
     //change this List<String> to expected class
     private List<String> mWords;
 
-    public ViewHistoryAdapter(ContentView mContext, List<String> mWords) {
+    public ViewHistoryAdapter(Context mContext, List<String> mWords) {
         this.mContext = mContext;
         this.mWords = mWords;
     }
