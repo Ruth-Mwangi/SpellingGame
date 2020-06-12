@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,6 +46,8 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
     private FirebaseAuth.AuthStateListener mAuthListener;
     private ProgressDialog mAuthProgressDialog;
     private String mUserName;
+    private Class fragmentClass;
+    private Fragment fragment;
 
     public CreateAccountFragment() {
         // Required empty public constructor
@@ -89,9 +92,10 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 final FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null){
-                    Intent intent=new Intent(getActivity(),GameFragment.class);
+                    Intent intent = new Intent(getContext(), MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
+                    getActivity().finish();
                 }
             }
         };
@@ -103,10 +107,20 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
             createNewUser();
         }
         if (v==mTxtLogin){
-            Toast.makeText(getActivity(),"this",Toast.LENGTH_SHORT).show();
-            Intent intent=new Intent(getActivity(),LoginFragment.class);
-            intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK | intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
+//            Toast.makeText(getActivity(),"this",Toast.LENGTH_SHORT).show();
+//            Intent intent=new Intent(getActivity(),LoginFragment.class);
+//            intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK | intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(intent);
+            fragmentClass= LoginFragment.class;
+            try {
+                fragment=(Fragment) fragmentClass.newInstance();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (java.lang.InstantiationException e) {
+                e.printStackTrace();
+            }
+            FragmentManager fragmentManager=getFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
         }
     }
 
