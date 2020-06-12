@@ -8,11 +8,11 @@ import androidx.navigation.ui.AppBarConfiguration;
 
 import android.content.Intent;
 import android.app.ActionBar;
+import android.icu.text.DateFormat;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.ruth.spellinggame.R;
 
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Class fragmentClass;
     Fragment fragment = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void logout()  {
+        FirebaseAuth.getInstance().signOut();
         fragmentClass= LoginFragment.class;
         try {
             fragment=(Fragment) fragmentClass.newInstance();
