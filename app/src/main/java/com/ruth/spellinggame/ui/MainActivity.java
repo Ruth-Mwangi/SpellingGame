@@ -7,8 +7,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.ruth.spellinggame.R;
+
+import java.text.DateFormat;
 
 public class MainActivity extends AppCompatActivity {
 
